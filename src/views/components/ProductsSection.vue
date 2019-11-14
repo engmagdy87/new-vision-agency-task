@@ -69,7 +69,8 @@
           <span v-if="filterByText" class="mr-2">
             Filter by:
             <span class="font-weight-bold">{{filterByText}}</span>
-          </span>-
+          </span>
+          <span v-if="filterByText&&sortedByText">-</span>
           <span v-if="sortedByText" class="ml-2">
             Sort by:
             <span class="font-weight-bold">{{sortedByText}}</span>
